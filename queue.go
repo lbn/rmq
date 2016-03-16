@@ -383,7 +383,7 @@ func redisErrIsNil(result redis.Cmder) bool {
 	case redis.Nil:
 		return true
 	default:
-		log.Printf("rmq redis error is not nil %s", result.Err())
+		//log.Printf("rmq redis error is not nil %s", result.Err())
 		return false
 	}
 }
